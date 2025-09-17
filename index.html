@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Link Bio • SMAK St. Louis 2</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    :root{
+      --bg1: #0f1226;
+      --bg2: #1b1240;
+      --acc: #7c5cff;
+      --acc2:#00e0a4;
+      --soft:#c9c6ff;
+    }
+    html, body { height: 100%; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .glow {
+      position: absolute; inset: -20vmax;
+      background:
+        radial-gradient(40vmax 40vmax at 15% 20%, rgba(124,92,255,0.25), transparent 60%),
+        radial-gradient(35vmax 35vmax at 80% 10%, rgba(0,224,164,0.18), transparent 60%),
+        radial-gradient(45vmax 45vmax at 50% 95%, rgba(124,92,255,0.15), transparent 60%);
+      filter: blur(24px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .fade-up { opacity: 0; transform: translateY(12px); animation: in 700ms ease forwards; }
+    .fade-up-2 { animation-delay: .06s; }
+    @keyframes in { to { opacity: 1; transform: translateY(0);} }
+
+    .btn { position: relative; overflow: hidden; }
+    .btn:after {
+      content: ""; position: absolute; inset: 0; background: radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.35), transparent 35%);
+      opacity: 0; transition: opacity .25s ease;
+    }
+    .btn:active:after { opacity: 1; transition: opacity .25s ease; }
+    .glass {
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .light .glow { display: none; }
+    .light .page { background: radial-gradient(1200px 600px at 0% -10%, #f5f3ff, #f6fff9 80%); }
+  </style>
+</head>
+<body class="min-h-screen text-white relative overflow-x-hidden"
+      style="background: url('background.jpg') no-repeat center center fixed; background-size: cover;">
+
+
+  <main class="page relative z-10 flex items-center justify-center min-h-screen px-6 py-14">
+    <div class="w-full max-w-md">
+      <section class="glass rounded-3xl p-6 md:p-8 fade-up">
+        <div class="flex flex-col items-center text-center gap-5">
+          <!-- Avatar diganti dengan logo -->
+          <div class="ring-grad rounded-full p-1.5">
+            <div class="rounded-full p-1.5">
+              <img src="logo.png" alt="Logo SMAK St. Louis 2" class="rounded-full w-24 h-24 md:w-28 md:h-28 bg-white p-2">
+            </div>
+          </div>
+
+          <!-- Nama & bio -->
+          <div>
+            <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">SMA Katolik St. Louis 2</h1>
+            <p class="text-sm md:text-base text-white/70 mt-1">Jalan Tidar 119, Surabaya</p>
+          </div>
+        </div>
+        
+      <!-- Link buttons 1 -->
+      <section class="mt-5 md:mt-6 space-y-3 fade-up fade-up-2">
+        <!-- Contoh tautan 1 -->
+        <a href="https://stlouis2-creator.github.io/presentasi/" target="_blank" rel="noopener" class="btn group block w-full">
+          <div class="glass rounded-2xl p-4 md:p-5 flex items-center gap-4 hover:scale-[1.01] transition">
+            <div class="shrink-0 rounded-xl w-10 h-10 grid place-items-center bg-gradient-to-br">
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-3">
+                <p class="font-semibold">Survey Kepuasan</p>
+                <span class="text-xs text-white/60"></span>
+              </div>
+              <p class="text-sm text-white/60">bagaimana presentasi hari ini</p>
+            </div>
+            <span class="shrink-0 text-white/50 group-hover:translate-x-0.5 transition"></span>
+          </div>
+        </a>
+
+      <!-- Link buttons 2 -->
+      <section class="mt-5 md:mt-6 space-y-3 fade-up fade-up-2">
+        <!-- Contoh tautan 1 -->
+        <a href="https://chat.whatsapp.com/CJQe3O3vBuBKN2aaFB2Hx5?mode=ems_qr_t" target="_blank" rel="noopener" class="btn group block w-full">
+          <div class="glass rounded-2xl p-4 md:p-5 flex items-center gap-4 hover:scale-[1.01] transition">
+            <div class="shrink-0 rounded-xl w-10 h-10 grid place-items-center bg-gradient-to-br">
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-3">
+                <p class="font-semibold">Whatsapp grup SMPK AC2</p>
+                <span class="text-xs text-white/60"></span>
+              </div>
+              <p class="text-sm text-white/60">Dapatkan Informasi selanjutnya</p>
+            </div>
+            <span class="shrink-0 text-white/50 group-hover:translate-x-0.5 transition"></span>
+          </div>
+        </a>
+
+        <!-- Link buttons 3 -->
+      <section class="mt-5 md:mt-6 space-y-3 fade-up fade-up-2">
+        <!-- Contoh tautan 1 -->
+        <a href="https://smakstlouis2.sch.id/" target="_blank" rel="noopener" class="btn group block w-full">
+          <div class="glass rounded-2xl p-4 md:p-5 flex items-center gap-4 hover:scale-[1.01] transition">
+            <div class="shrink-0 rounded-xl w-10 h-10 grid place-items-center bg-gradient-to-br">
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-3">
+                <p class="font-semibold">Website SMAK St. Louis 2</p>
+                <span class="text-xs text-white/60"></span>
+              </div>
+              <p class="text-sm text-white/60">Situs Resmi SMAK St. Louis 2</p>
+            </div>
+            <span class="shrink-0 text-white/50 group-hover:translate-x-0.5 transition"></span>
+          </div>
+        </a>
+
+          <!-- Link buttons 4 -->
+      <section class="mt-5 md:mt-6 space-y-3 fade-up fade-up-2">
+        <!-- Contoh tautan 1 -->
+        <a href="https://www.instagram.com/smastlouis2/?hl=en" target="_blank" rel="noopener" class="btn group block w-full">
+          <div class="glass rounded-2xl p-4 md:p-5 flex items-center gap-4 hover:scale-[1.01] transition">
+            <div class="shrink-0 rounded-xl w-10 h-10 grid place-items-center bg-gradient-to-br">
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-3">
+                <p class="font-semibold">Instagram SMAK St. Louis 2</p>
+                <span class="text-xs text-white/60"></span>
+              </div>
+              <p class="text-sm text-white/60">Follow kami melalui instagram</p>
+            </div>
+            <span class="shrink-0 text-white/50 group-hover:translate-x-0.5 transition"></span>
+          </div>
+        </a>
+
+          <!-- Link buttons 5 -->
+      <section class="mt-5 md:mt-6 space-y-3 fade-up fade-up-2">
+        <!-- Contoh tautan 1 -->
+        <a href="https://www.tiktok.com/@smakstlouis2" target="_blank" rel="noopener" class="btn group block w-full">
+          <div class="glass rounded-2xl p-4 md:p-5 flex items-center gap-4 hover:scale-[1.01] transition">
+            <div class="shrink-0 rounded-xl w-10 h-10 grid place-items-center bg-gradient-to-br">
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-3">
+                <p class="font-semibold">Tiktok SMAK St. Louis 2</p>
+                <span class="text-xs text-white/60"></span>
+              </div>
+              <p class="text-sm text-white/60">Follow kami melalui Tiktok</p>
+            </div>
+            <span class="shrink-0 text-white/50 group-hover:translate-x-0.5 transition"></span>
+          </div>
+        </a>
+
+
+  <script>
+    // Tahun otomatis
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Ripple posisi klik
+    document.querySelectorAll('.btn').forEach(el => {
+      el.addEventListener('pointerdown', e => {
+        const rect = el.getBoundingClientRect();
+        el.style.setProperty('--x', `${e.clientX - rect.left}px`);
+        el.style.setProperty('--y', `${e.clientY - rect.top}px`);
+      });
+    });
+
+    // CTA demo
+    const cta = document.getElementById('ctaBuy');
+    cta.addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('Demo: Tombol ini bisa diarahkan ke halaman produk atau form pemesanan Anda.');
+    });
+
+    // Toggle tema terang/gelap
+    const toggle = document.getElementById('themeToggle');
+    const label = document.getElementById('themeLabel');
+    const root = document.documentElement;
+    function setTheme(mode){
+      if(mode==='light'){
+        document.body.classList.add('light');
+        label.textContent = 'Terang';
+        root.style.setProperty('--bg1', '#ffffff');
+      }else{
+        document.body.classList.remove('light');
+        label.textContent = 'Gelap';
+        root.style.setProperty('--bg1', '#0f1226');
+      }
+      localStorage.setItem('mode', mode);
+    }
+    const saved = localStorage.getItem('mode') || 'dark';
+    setTheme(saved);
+    toggle.addEventListener('click', ()=>{
+      const now = document.body.classList.contains('light') ? 'dark' : 'light';
+      setTheme(now);
+    });
+
+    // Akses cepat: tekan "E" untuk edit cepat (demo modal sederhana)
+    document.addEventListener('keydown', (e)=>{
+      if(e.key.toLowerCase()==='e'){
+        alert('Tip: Untuk mengubah nama, bio, atau tautan, langsung edit teks dan URL di Canva Code ini.');
+      }
+    });
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9805ac1b5418ce0a',t:'MTc1ODA4MTM3MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
